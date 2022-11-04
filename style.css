@@ -7,4 +7,55 @@
 
 /* utils */
 
+.container{
+    max-width: 1200px;
+}
+
+.flex{
+    display: flex;
+}
+
 /* generic */
+
+body{
+    font-family: sans-serif;
+    padding-top: 70px;
+}
+
+/* header */
+
+header{
+    background-color: rgb(255,105,0);
+    font-size: 18px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header *{
+    color: rgb(231,231,231);
+}
+
+header .container.flex{
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    display: inline;
+}
+
+li a{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+header .logo{
+    height: 30px;
+}
