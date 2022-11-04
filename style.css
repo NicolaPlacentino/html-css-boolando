@@ -20,11 +20,15 @@
 
 body{
     font-family: sans-serif;
-    padding-top: 140px;
+    padding-top: 70px;
 }
 
 .p-relative{
     position: relative;
+}
+
+.upper-card{
+    cursor: pointer;
 }
 
 /* header */
@@ -71,8 +75,14 @@ header .logo{
 
 /* main */
 
+.row.flex{
+    justify-content: center;
+    gap: 15px;
+    margin: 50px 0;
+}
+
 .card img{
-    height: 500px;
+    height: 550px;
 }
 
 .discount, .sustainable, .favourite{
@@ -97,7 +107,6 @@ header .logo{
 }
 
 .favourite{
-    /* display: inline-block; */
     background-color: white;
     padding: 12px 12px;
     right: 0;
@@ -106,10 +115,6 @@ header .logo{
 
 .favourite:hover{
     color: red;
-}
-
-.upper-card:hover img{
-    content: url(img/1b.webp);
 }
 
 .lower-card{
@@ -129,4 +134,32 @@ header .logo{
     color: black;
     font-weight: normal;
     text-decoration: line-through;
+}
+
+#levis-fit-tee:hover img{
+    content: url(img/1b.webp);
+}
+
+#guess:hover img{
+    content: url(img/2b.webp);
+}
+
+#CZF:hover img{
+    content: url(img/3b.webp);
+}
+
+#levis-tee:hover img{
+    content: url(img/4b.webp);
+}
+
+#maya-deluxe:hover img{
+    content: url(img/5b.webp);
+}
+
+#esprit:hover img{
+    content: url(img/6b.webp);
+}
+
+#esprit .sustainable{
+    left: 0;
 }
