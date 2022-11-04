@@ -16,6 +16,10 @@
     display: flex;
 }
 
+.p-relative{
+    position: relative;
+}
+
 /* generic */
 
 body{
@@ -23,13 +27,24 @@ body{
     padding-top: 70px;
 }
 
-.p-relative{
-    position: relative;
+li{
+    display: inline;
+}
+
+li a{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
 .upper-card{
     cursor: pointer;
 }
+
+footer h3, footer h4, .icons *{
+    margin: 0 5px;
+}
+
 
 /* header */
 
@@ -54,23 +69,12 @@ header .container.flex{
     align-items: center;
 }
 
-li{
-    display: inline;
-}
-
-li a{
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0 5px;
+header li a{
     font-weight: bold;
 }
 
 header .logo{
     height: 30px;
-}
-
-.icons *{
-    margin: 0 5px;
 }
 
 /* main */
@@ -162,4 +166,25 @@ header .logo{
 
 #esprit .sustainable{
     left: 0;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    padding: 30px;
+    line-height: 30px;
+}
+
+footer *{
+    color: white;
+}
+
+footer li{
+    font-size: 14px;
+
+}
+
+footer .container{
+    justify-content: space-between;
 }
